@@ -1,0 +1,9 @@
+POST http://localhost:5000/api/heroes HTTP/1.1
+Content-Type: application/json
+
+{
+  "nickname": "Captain America",
+  "realName": "Steve Rojers",
+  "originDescription": "Steve Rogers (Captain America) is a fictional character portrayed by Chris Evans in the Marvel Cinematic Universe (MCU) film franchise, based on the Marvel Comics character of the same name. In the films, Steve Rogers is a World War ",
+  "catchPhrase": "Look, up in the sky, it's a bird, it's a plane, it's Superman!"
+}
