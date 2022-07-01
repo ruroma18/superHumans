@@ -4,5 +4,6 @@ module.exports = {
   configPath: path.resolve(__dirname, 'config', 'db.json'),
   modelsPath: path.resolve(__dirname,'db', 'models'),
   seedersPath: path.resolve(__dirname, 'db', 'seeders'),
-  migrationsPath: path.resolve(__dirname, 'db', 'migrations')
+  migrationsPath: path.resolve(__dirname, 'db', 'migrations'),
+  imgPath: path.resolve(__dirname, 'public', 'images')
 };
