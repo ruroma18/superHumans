@@ -31,7 +31,9 @@ module.exports.createHero = async (req, res, next) => {
 module.exports.findHeroes = async (req, res, next) => {
   try {
 
-    const heroes = await Hero.findAll({include: [Superpower, HeroImg]})
+    const {query: {limit, offset}} = req;
+
+    const heroes = await Hero.findAll({include: [Superpower, HeroImg], limit, offset})
 
     if (!heroes) {
       return next(createError(404, 'Heroes not found'));
